@@ -1,0 +1,389 @@
+<!DOCTYPE html> <html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Gulp pack for easy html/php markup development">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+	<title>Easy-webdev-startpack v3.0</title>
+</head>
+<script>
+
+
+
+$( document ).ready(function() {
+    
+    $('.aside_btn').on('click',function(e){
+        e.preventDefault();
+        $('.aside').toggleClass('open');
+    });    
+    
+    $(document).on('click',function(e){
+        var container = $(".aside.open");
+        if (container.has(e.target).length === 0){
+            $('.aside').removeClass('open');
+        }
+    });
+});
+    
+</script>
+
+<body>
+    <main class="page">
+        <div class="aside">
+    <header class="header header_block">
+
+            <a href="" class="logo logo_menu flex">
+            <span class="logo_icon icon-logo"></span>
+            <span class="logo_text">
+                Dashboard
+                <span class="logo_version">v.01</span>
+            </span> 
+        </a> 
+
+</header>
+
+    <a href="" class="aside_btn icon-right"></a>
+     
+    <menu class="menu menu_aside">
+        <a href="" class="menu_item">
+            <span class="menu_item_icon icon-key">
+
+            </span>
+            <span class="menu_item_text">
+                Dashboard
+            </span>
+        </a>
+        <a href="" class="menu_item">
+            <span class="menu_item_icon icon-d">
+
+            </span>
+            <span class="menu_item_text">
+                Product
+            </span>
+            <span class="menu_item_subMenu icon-right"></span>
+        </a>
+        <a href="" class="menu_item active">
+            <span class="menu_item_icon icon-user">
+
+            </span>
+            <span class="menu_item_text">
+                Customers
+            </span>
+            <span class="menu_item_subMenu icon-right"></span>
+        </a>
+        <a href="" class="menu_item">
+            <span class="menu_item_icon icon-wallet">
+
+            </span>
+            <span class="menu_item_text">
+                Income
+            </span>
+            <span class="menu_item_subMenu icon-right"></span>
+        </a>
+        <a href="" class="menu_item">
+            <span class="menu_item_icon icon-discount">
+
+            </span>
+            <span class="menu_item_text">
+                Promote
+            </span>
+            <span class="menu_item_subMenu icon-right"></span>
+        </a>
+        <a href="" class="menu_item">
+            <span class="menu_item_icon icon-message">
+
+            </span>
+            <span class="menu_item_text">
+                Help
+            </span>
+            <span class="menu_item_subMenu icon-right"></span>
+        </a>
+
+    </menu>
+
+    <div class="user user_block">
+        <a href="" class="user_block flex">
+            <img src="img/user_avatar.png" alt="user avatar" class="user_block_avatar">
+            <span class="user_block_info">
+                <b class="user_block_name">Evano</b>
+                Project Manager
+            </span>
+        </a>
+        
+    </div>
+</div>
+        <div class="content ">
+    <h2 class="content_block page_title">
+    Hello Evano 👋🏼,
+</h2>
+
+
+    <div class="content_block content_block-white">
+        
+        <div class="content_block-header content_block-header__manager content_block__padding flex">
+            <div>
+                <div class="content_block-header-h1">
+                    All Customers
+                </div>
+                <div class="content_block-header-subHeader">
+                    Active Members
+                </div>
+            </div>
+            
+            
+            <div class="search">
+    <div class="search_block">
+        <input type="text" class="search_input" placeholder="Search">
+        
+        <button type="submit" class="icon-search search_btn"></button>
+    </div>
+</div>   
+            
+        </div>
+        
+        <div class="content_block-main">
+
+            <div class="table table_manager table_manager-one">
+                <div class="table_row table_header">
+                    <div class="table_col">
+                        Customer Name
+                    </div>
+                    <div class="table_col">
+                        Company
+                    </div>
+                    <div class="table_col">
+                        Phone Number
+                    </div>
+                    <div class="table_col">
+                        Email
+                    </div>
+                    <div class="table_col">
+                        Country 
+                    </div>
+                    <div class="table_col">
+                        Status 
+                    </div>
+                </div>
+                <div class="table_row">
+                    <div class="table_col">
+                        Jane Cooper
+                    </div>
+                    <div class="table_col">
+                        Microsoft
+                    </div>
+                    <div class="table_col">
+                        (225) 555-0118
+                    </div>
+                    <div class="table_col">
+                        jane@microsoft.com
+                    </div>
+                    <div class="table_col">
+                        United States
+                    </div>
+                    <div class="table_col">
+                        <a href="" class="btn btn_active">Active</a> 
+                    </div>
+                </div>
+                <div class="table_row">
+                    <div class="table_col">
+                        Floyd Miles
+                    </div>
+                    <div class="table_col">
+                        Yahoo
+                    </div>
+                    <div class="table_col">
+                        (205) 555-0100
+                    </div>
+                    <div class="table_col">
+                        floyd@yahoo.com
+                    </div>
+                    <div class="table_col">
+                        Kiribati
+                    </div>
+                    <div class="table_col">
+                        <a href="" class="btn btn_inactive">Inactive</a> 
+                    </div>
+                </div>
+                <div class="table_row">
+                    <div class="table_col">
+                        Ronald Richards
+                    </div>
+                    <div class="table_col">
+                        Adobe
+                    </div>
+                    <div class="table_col">
+                        (302) 555-0107
+                    </div>
+                    <div class="table_col">
+                        ronald@adobe.com
+                    </div>
+                    <div class="table_col">
+                        Israel
+                    </div>
+                    <div class="table_col">
+                        <a href="" class="btn btn_inactive">Inactive</a> 
+                    </div>
+                </div>
+                <div class="table_row">
+                    <div class="table_col">
+                        Marvin McKinney
+                    </div>
+                    <div class="table_col">
+                        Tesla
+                    </div>
+                    <div class="table_col">
+                        (252) 555-0126
+                    </div>
+                    <div class="table_col">
+                        marvin@tesla.com
+                    </div>
+                    <div class="table_col">
+                        Iran
+                    </div>
+                    <div class="table_col">
+                        <a href="" class="btn btn_active">Active</a> 
+                    </div>
+                </div>
+                <div class="table_row">
+                    <div class="table_col">
+                        Jerome Bell
+                    </div>
+                    <div class="table_col">
+                        Google
+                    </div>
+                    <div class="table_col">
+                        (629) 555-0129
+                    </div>
+                    <div class="table_col">
+                        jerome@google.com
+                    </div>
+                    <div class="table_col">
+                        Réunion
+                    </div>
+                    <div class="table_col">
+                        <a href="" class="btn btn_active">Active</a> 
+                    </div>
+                </div>
+                <div class="table_row">
+                    <div class="table_col">
+                        Kathryn Murphy
+                    </div>
+                    <div class="table_col">
+                        Microsoft
+                    </div>
+                    <div class="table_col">
+                        (406) 555-0120
+                    </div>
+                    <div class="table_col">
+                        kathryn@microsoft.com
+                    </div>
+                    <div class="table_col">
+                        Curaçao
+                    </div>
+                    <div class="table_col">
+                        <a href="" class="btn btn_active">Active</a> 
+                    </div>
+                </div>
+                <div class="table_row">
+                    <div class="table_col">
+                        Jacob Jones
+                    </div>
+                    <div class="table_col">
+                        Yahoo
+                    </div>
+                    <div class="table_col">
+                        (208) 555-0112
+                    </div>
+                    <div class="table_col">
+                        jacob@yahoo.com
+                    </div>
+                    <div class="table_col">
+                        Brazil
+                    </div>
+                    <div class="table_col">
+                        <a href="" class="btn btn_active">Active</a> 
+                    </div>
+                </div>
+                <div class="table_row">
+                    <div class="table_col">
+                        Kristin Watson
+                    </div>
+                    <div class="table_col">
+                        Facebook
+                    </div>
+                    <div class="table_col">
+                        (704) 555-0127
+                    </div>
+                    <div class="table_col">
+                        kristin@facebook.com
+                    </div>
+                    <div class="table_col">
+                        Åland Islands
+                    </div>
+                    <div class="table_col">
+                        <a href="" class="btn btn_inactive">Inactive</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content_block__padding">
+            <div class="table-data flex">
+                Showing data 1 to 8 of  256K entries
+                
+                <div class="pager flex">
+                    <a href="" class="pager-item icon-left_pag">
+                        
+                    </a>
+                    <a href="" class="pager-item pager-item__active">
+                        1
+                    </a>
+                    <a href="" class="pager-item">
+                        2
+                    </a>
+                    <a href="" class="pager-item">
+                        3
+                    </a>
+                    <a href="" class="pager-item">
+                        4
+                    </a>
+                    <a href="" class="pager-item pager-item__clear">
+                        ...
+                    </a>
+                    <a href="" class="pager-item">
+                        40
+                    </a>
+                    <a href="" class="pager-item icon-right_pag">
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    </main>
+</body>
+
+</html>
